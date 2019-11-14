@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import lorem from "../../../assets/lorem.jpeg";
+import './Isp.scss';
 
 class Isp extends Component {
     render() {

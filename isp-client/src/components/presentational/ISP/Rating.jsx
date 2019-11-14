@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './Rating.scss';
 
 class Rating extends Component {
     render() {
         return (
-            <div>
+            <div className="about">
                 <a class="waves-effect waves-light btn-large">Rating:</a>
                 <i className="material-icons">star</i>
                 <i className="material-icons">star</i>

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './Description.scss';
 
 class Description extends Component {
     render() {
         return (
             <div>
-                <p>
+                <p className="move">
                     Our internet plans are now available at never before prices.
                     Let say you’re building a simple PHP web application, 
                     you have three PHP scripts: index.php for the home page, 
