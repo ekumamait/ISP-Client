@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import NavBar from '../navbar/NavBar';
 import SearchBar from '../search/SearchBar';
-import IspList from '../ISP/IspList';
-import Isp from '../ISP/Isp';
-import Rating from '../ISP/Rating';
-import Description from '../ISP/Description';
+import IspList from '../isp/IspList';
+import Isp from '../isp/Isp';
+import Rating from '../isp/Rating';
+import Description from '../isp/Description';
 
 class LandingPage extends Component {
     render() {
@@ -14,7 +14,7 @@ class LandingPage extends Component {
                 <div class="row">
                     
                     <div class="col s7">                    
-                        <i className="material-icons">home</i>
+                        {/* <i className="material-icons">home</i> */}
                         <br></br>
                         <SearchBar />
                         <IspList />
