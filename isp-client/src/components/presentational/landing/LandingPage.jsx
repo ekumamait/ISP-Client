@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import NavBar from '../navbar/NavBar';
 import SearchBar from '../search/SearchBar';
-import IspList from '../ISP/IspList';
-import Isp from '../ISP/Isp';
-import Rating from '../ISP/Rating';
-import Description from '../ISP/Description';
+import IspList from '../isp/IspList';
+import Isp from '../isp/Isp';
+import Rating from '../isp/Rating';
+import Description from '../isp/Description';
 
 class LandingPage extends Component {
     render() {
@@ -14,11 +14,11 @@ class LandingPage extends Component {
                 <div class="row">
                     
                     <div class="col s7">                    
-                        <a href="#!" className="secondary-content"><i className="material-icons">home</i></a>
-                        (one-half)
+                        {/* <i className="material-icons">home</i> */}
+                        <br></br>
                         <SearchBar />
                         <IspList />
-                        <a class="waves-effect waves-light btn-large"><i className="material-icons">sort</i>Sort by</a>
+                        <a  href="http://google.com" class="waves-effect waves-light btn-large"><i className="material-icons">sort</i>Sort by</a>
                         <div>
                             <label>
                                 <input class="with-gap" name="group3" type="radio" checked />
@@ -31,12 +31,12 @@ class LandingPage extends Component {
                         </div>
                     </div>
                     <div class="col s5">
-                        <div>
+                        <p>
                         <Isp /><br></br>
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                         <Rating /><br></br>
-                        </div>
+                        </p>
                         <Description />
                     </div>
                 </div>
