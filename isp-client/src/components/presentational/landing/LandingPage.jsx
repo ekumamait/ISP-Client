@@ -11,9 +11,9 @@ class LandingPage extends Component {
         return (
             <div>
                 <NavBar />
-                <div class="row">
+                <div className="row">
                     
-                    <div class="col s7">                    
+                    <div className="col s7">                    
                         {/* <i className="material-icons">home</i> */}
                         <br></br>
                         <SearchBar />
@@ -21,22 +21,22 @@ class LandingPage extends Component {
                         <a  href="http://google.com" class="waves-effect waves-light btn-large"><i className="material-icons">sort</i>Sort by</a>
                         <div>
                             <label>
-                                <input class="with-gap" name="group3" type="radio" checked />
+                                <input className="with-gap" name="group3" type="radio" checked />
                                 <span>Price</span>
                             </label>
                             <label>
-                                <input class="with-gap" name="group3" type="radio" checked />
+                                <input className="with-gap" name="group3" type="radio" checked />
                                 <span>Rating</span>
                             </label>
                         </div>
                     </div>
-                    <div class="col s5">
-                        <p>
+                    <div className="col s5">
+                        <div>
                         <Isp /><br></br>
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                         <Rating /><br></br>
-                        </p>
+                        </div>
                         <Description />
                     </div>
                 </div>
