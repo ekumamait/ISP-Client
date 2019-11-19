@@ -1,17 +1,19 @@
 import { GETALLISP, GETSINGLEISP, CREATEISP } from '../constants/ActionTypes';
 
 const initialState = {
-    isp: {}
+    isp: [],
+    singleIsp: {},
+    createIsp: {}
   };
   
   const ispReducer = (state = initialState, action) => {
     switch (action.type) {
         case GETSINGLEISP:
-            return { ...state, singleList: action.payload };
+            return { ...state, singleIsp: action.payload };
         case GETALLISP:
-            return { ...state, responseData: action.payload };
+            return { ...state, isp: action.payload };
         case CREATEISP:
-            return { ...state, createResponseData: action.payload };
+            return { ...state, createIsp: action.payload };
         default:
             return state;
     }

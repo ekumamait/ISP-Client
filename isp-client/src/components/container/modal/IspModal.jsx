@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createIsp } from '../../../actions/IspActions';
 import PropTypes from 'prop-types';
@@ -74,7 +74,6 @@ class IspModal extends Component {
 }
 
 IspModal.propTypes = {
-    errors: PropTypes.object.isRequired,
     createIsp: PropTypes.func.isRequired
 };
 

@@ -9,15 +9,34 @@
     margin-bottom: 20px;
 }
 
-.modal .modal-footer {
-    background-color: darkgray;
-}
-
-.modal .material-icons {
-    color: #26a69a;
-}
-
 .input-field .prefix ~ label {
     font-size: 18px;
     font-family: Lato;
+    background-color: hls(220, 12%, 95%); 
+}
+
+.modal .modal-close {
+    background-color: #26a69a;
+}
+
+.material-icons {
+    color: #26a69a;
+}
+
+.modal h4 {
+    margin-right: 350px;
+}
+
+.title {  
+    color: #303030;
+}
+
+.terminate {
+    padding-bottom: 50px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 90%;
+    top: 10%;
+    border: none;
 }
