@@ -14,9 +14,9 @@ class Description extends Component {
                     you’ll have a more html markups, some CSS, JavaScript 
                     and Databases but for this example we’ll keep it simple just to demonstrate the DRY principle.
                 </p>
-                    <a class="waves-effect waves-light btn-large"><i className="material-icons">link</i>Link</a>
-                    <a class="waves-effect waves-light btn-large"><i className="material-icons">share</i>share</a>
-                    <a class="waves-effect waves-light btn-large"><i className="material-icons">cloud_download</i>Download</a>
+                    <a className="waves-effect waves-light btn-large"><i className="material-icons">link</i>Link</a>
+                    <a className="waves-effect waves-light btn-large"><i className="material-icons">share</i>share</a>
+                    <a className="waves-effect waves-light btn-large"><i className="material-icons">cloud_download</i>Download</a>
             </div>
         );
     }

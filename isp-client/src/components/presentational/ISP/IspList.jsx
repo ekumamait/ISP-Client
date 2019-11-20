@@ -28,7 +28,7 @@ class IspList extends Component {
                     </li>
                     <li className="collection-item avatar">
                         <img src={Glo} alt="Glo" className="circle"></img>
-                        <span className="title">GLO</span>
+                        <span className="title">Glo</span>
                         <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
                     </li>
                 </ul>

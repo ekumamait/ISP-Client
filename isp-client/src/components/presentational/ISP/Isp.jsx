@@ -6,15 +6,15 @@ class Isp extends Component {
     render() {
         return (
             <div>
-                <div class="col s12 m7">
-                    <div class="card horizontal">
-                        <div class="card-image">
+                <div className="col s12 m7">
+                    <div className="card horizontal">
+                        <div className="card-image">
                             <img src={lorem}></img>
                         </div>
-                        <div class="card-stacked">
-                            <div class="card-content">
+                        <div className="card-stacked">
+                            <div className="card-content">
                                 <div>
-                                    <a href="#!" className="secondary-content"><i className="material-icons">network_wifi</i> Max speed: 500mbps</a><br></br>
+                                    <a href="#!" className="secondary-content"><i className="material-icons">network_wifi</i>Max speed: 500mbps</a><br></br>
                                 </div>
                                 <div>
                                     <a href="#!" className="secondary-content"><i className="material-icons">phone</i> +254705999231</a>
@@ -22,7 +22,7 @@ class Isp extends Component {
                                 <a href="#!" className="secondary-content"><i className="material-icons">mail</i> 123@mail.com</a>
                                 <a href="#!" className="secondary-content"><i className="material-icons">monetization_on</i> Min. Plan: 450/-</a>
                             </div>
-                            <div class="card-action">
+                            <div className="card-action">
                                 <a href="#">Airtel</a>
                             </div>
                         </div>

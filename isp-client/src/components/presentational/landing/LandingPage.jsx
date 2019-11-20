@@ -18,7 +18,7 @@ class LandingPage extends Component {
                         <br></br>
                         <SearchBar />
                         <IspList />
-                        <a  href="http://google.com" class="waves-effect waves-light btn-large"><i className="material-icons">sort</i>Sort by</a>
+                        <a  href="http://google.com" className="waves-effect waves-light btn-large"><i className="material-icons">sort</i>Sort by</a>
                         <div>
                             <label>
                                 <input className="with-gap" name="group3" type="radio" checked />
