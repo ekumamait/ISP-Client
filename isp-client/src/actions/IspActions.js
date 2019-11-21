@@ -1,4 +1,4 @@
-import { GET_ERRORS, baseUrl } from '../constants/ActionTypes';
+import { GET_ERRORS, baseUrl, GETALLISP } from '../constants/ActionTypes';
 
 export const createIsp = (ispData) => dispatch => {
   console.log(ispData);
@@ -12,7 +12,6 @@ export const createIsp = (ispData) => dispatch => {
   })
     .then(res => res.json())
     .then(data => {
-      console.log(data)
       if (data.error) {
         return dispatch({
           type: GET_ERRORS,
@@ -33,12 +32,16 @@ export const getAllIsp = (ispData) => dispatch => {
   })
     .then(res => res.json())
     .then(data => {
-      console.log(data)
       if (data.error) {
         return dispatch({
           type: GET_ERRORS,
           payload: data.error
         });
+      } else {
+        return dispatch({
+          type: GETALLISP,
+          payload: data.data
+        })
       }
     });
 };
