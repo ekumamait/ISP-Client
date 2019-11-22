@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavBar from '../navbar/NavBar';
 import SearchBar from '../search/SearchBar';
-import IspList from '../../container/isp/ispList';
+import IspList from '../isp/IspList';
 import Isp from '../isp/Isp';
 import Rating from '../isp/Rating';
 import Description from '../isp/Description';
 
-class LandingPage extends Component {
-    render() {
-        return (
-            <div>
-                <NavBar />
+function Landing({props, clickEvent}) {
+    return (
+        <div>
+            <NavBar />
                 <div className="row">
                     <div className="col s7">                    
                         <br></br>
                         <SearchBar />
-                        <IspList />
+                        <IspList props={props} clickEvent={clickEvent}/>
                         <a  href="http://google.com" className="waves-effect waves-light btn-large">
                             <i className="material-icons">sort</i>Sort by
                         </a>
@@ -32,7 +31,7 @@ class LandingPage extends Component {
                     </div>
                     <div className="col s5">
                         <div>
-                        <Isp /><br></br>
+                        <Isp props={props}/><br></br>
                         </div>
                         <div>
                         <Rating /><br></br>
@@ -40,9 +39,8 @@ class LandingPage extends Component {
                         <Description />
                     </div>
                 </div>
-            </div>
-        );
-    }
+        </div>
+    );
 }
 
-export default LandingPage;
+export default Landing;
