@@ -20,11 +20,11 @@ function Landing({props, clickEvent}) {
                         </a>
                         <div>
                             <label>
-                                <input className="with-gap" name="group3" type="radio" checked />
+                                <input className="with-gap" name="group3" type="radio" />
                                 <span>Price</span>
                             </label>
                             <label>
-                                <input className="with-gap" name="group3" type="radio" checked />
+                                <input className="with-gap" name="group3" type="radio" />
                                 <span>Rating</span>
                             </label>
                         </div>
@@ -36,7 +36,7 @@ function Landing({props, clickEvent}) {
                         <div>
                         <Rating /><br></br>
                         </div>
-                        <Description />
+                        <Description props={props}/>
                     </div>
                 </div>
         </div>

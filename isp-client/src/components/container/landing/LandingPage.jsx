@@ -29,8 +29,8 @@ class LandingPage extends Component {
 }
 
 LandingPage.propTypes = {
-    getSingleIsp: PropTypes.object.isRequired,
-    getAllIsp: PropTypes.array.isRequired
+    getSingleIsp: PropTypes.func.isRequired,
+    getAllIsp: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => {
