@@ -2,7 +2,7 @@ import React from 'react';
 import lorem from "../../../assets/lorem.jpeg";
 import './Isp.scss';
 
-function Isp({props}) {    
+function Isp({props}) {   
     return (
         <div>
             <div className="col s12 m7">
@@ -19,19 +19,19 @@ function Isp({props}) {
                                 </div>
                                 <div>
                                     <a href="#!" className="secondary-content"><i className="material-icons">phone
-                                    </i>Phone: | {props.singleIsp? props.singleIsp.contact_no: '+254705999231'}</a><br></br>
+                                    </i>Phone: | {props.singleIsp ? props.singleIsp.contact_no: '+254705999231'}</a><br></br>
                                 </div>
                                 <div>
                                     <a href="#!" className="secondary-content"><i className="material-icons">mail
-                                    </i>Email: | {props.singleIsp? props.singleIsp.email: 'email@gmail.com'}</a><br></br>
+                                    </i>Email: | {props.singleIsp ? props.singleIsp.email: 'email@gmail.com'}</a><br></br>
                                 </div>
                                 <div>
                                     <a href="#!" className="secondary-content"><i className="material-icons">monetization_on
-                                    </i>Min.Plan: | {props.singleIsp? props.singleIsp.lowest_price: '450/-'}</a><br></br>
+                                    </i>Min.Plan: | {props.singleIsp ? props.singleIsp.lowest_price: '450/-'}</a><br></br>
                                 </div>
                             </div>
                             <div className="card-action">
-                                <a href="#">Airtel</a>
+                                <a href="#">{props.singleIsp ? props.singleIsp.name: 'Airtel'}</a>
                             </div>
                         </div>
                     </div>
